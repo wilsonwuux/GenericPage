@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <p> se inicio con <br>
+    npm init -y <br>
+    despues instalar <br>
+    npm install webpack webpack-cli --save-dev <br>
+    "webpack": "^5.0.0-rc.3",<br>
+    "webpack-cli": "^3.3.12",<br>
+    "webpack-dev-server": "^3.11.0"<br>
+    en ese orden despues configurar el archivo webpack.config.js <br>con el siguiten blok <br>
+    
+    const path = require('path');<br>
+ module.exports = {<br>
+  entry: './assets/javascript/entry.js',<br>
+  output: {publicPath: '/',path: path.join(__dirname, '..'),filename: 'dist/javascript/bundle.js'},<br>
+  plugins: [],<br>
+  module: {}<br>
+};<br>
+    despues insertar esto en package json en Script "start": "webpack-dev-server --open --config webpack.config.js"<br>
+    esto creara un servidor local en el puerto 8080
+  <br>
+    para empezar con html instalamos npm install html-webpack-pluging 
+    revisar comentarios he inicio de configuraciones 
+    webpack para usar SAAS = una libreria para css  <br>
+    npm install style-loader css-loader sass-loader -- save dev 
+        luego instalar npm install node-sass-dev
+   <br>
+luego se crea la carpeta css y el archivo css <br>
+<br> para integrar usamos import en scss <br>
+web devserver y la memoria virtual 
+es una de la forma en que webpack procesa la informacion atravez de memoria virtual 
+ya que nuestra app no necesita procesar del disco sino simplemente procesarlo en la memoria virtual y mandarlo al navegador 
+y hasta el final guardar cambis necesarios 
+
+// visual FONT 
+este poryecto implemento 
+
+WEBPACK
+WEBPACK CLI
+WEBPACK SERVER
+WEBPACK HTML PLUGING
+CSS LOADERS
+CCS GRID 
+CSS GRID AREAS 
+SASS VARIABLES
+SASS MIXIN
+
+</p>
+</section>
+</body>
+</html>

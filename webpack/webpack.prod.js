@@ -59,7 +59,7 @@ module.exports = merge(common,{
         publicPath:'.'
     },
     module: {
-        rules: [
+        rules: [  
           {
             test: /.scss$/,
             use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
